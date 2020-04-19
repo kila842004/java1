@@ -30,7 +30,7 @@ public class Astronomy {
     public static Double earthVsJupiter(){
         Double earth = earthSquare();
         Double jupiter = jupiterSquare();
-        Double otn = jupiter / earth;
+        Double otn = earth / jupiter;
         return otn;
     }
 }

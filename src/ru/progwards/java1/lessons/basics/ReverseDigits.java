@@ -6,8 +6,7 @@ public class ReverseDigits {
         Integer firstOst = number % 100;
         Integer secondNum = firstOst / 10;
         Integer secondOst = firstOst % 10;
-        String reverseNumStr = secondOst.toString() + secondNum.toString() + firstNum.toString();
-        Integer reverseNumInt = Integer.valueOf(reverseNumStr);
+        Integer reverseNumInt = secondOst * 100 + secondNum * 10 + firstNum;
         return reverseNumInt;
     }
 }

@@ -14,7 +14,16 @@ public class AccuracyDoubleFloat {
         return volumeFl;
     }
     public static double calculateAccuracy(double radius){
-        Double sub =  volumeBallDouble(radius) - volumeBallFloat((float) radius);
+        Double x = volumeBallDouble(radius);
+        Double y = Double.valueOf(volumeBallFloat((float) radius));
+        Double sub =  x - y;
+        System.out.println(sub);
         return sub;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(PI_DBL);
+        System.out.println(PI_FLT);
+        calculateAccuracy(6371.2);
     }
 }

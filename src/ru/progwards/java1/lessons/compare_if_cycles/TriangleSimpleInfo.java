@@ -23,14 +23,9 @@ public class TriangleSimpleInfo {
         }
     }
     public static boolean isEquilateralTriangle(int a, int b, int c){
-        if (a == b || a == c || b == c)
+        if ((a == b) || (b == c) || (a == c))
             return true;
         else
             return false;
-    }
-
-    public static void main(String[] args) {
-        int res = maxSide(2,3,4);
-        System.out.println(res);
     }
 }

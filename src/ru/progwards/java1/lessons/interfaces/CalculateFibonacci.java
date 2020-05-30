@@ -32,11 +32,6 @@ public class CalculateFibonacci {
     public static class CacheInfo{
         public int n;
         public int fibo;
-
-        CacheInfo(){
-            this.n = 0;
-            this.fibo = 0;
-        }
     }
 
     public static CacheInfo getLastFibo(){
@@ -48,6 +43,9 @@ public class CalculateFibonacci {
 
     public static void main(String[] args) {
         System.out.println(CalculateFibonacci.fiboNumber(29));
+        System.out.println(CalculateFibonacci.getLastFibo().fibo);
+        System.out.println(CalculateFibonacci.getLastFibo().n);
+
     }
 }
 

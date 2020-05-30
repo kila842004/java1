@@ -42,6 +42,9 @@ public class CalculateFibonacci {
     public static CacheInfo getLastFibo(){
         return lastFibo;
     }
+    public static void clearLastFibo(){
+        lastFibo = null;
+    }
 
     public static void main(String[] args) {
         System.out.println(CalculateFibonacci.fiboNumber(10));

@@ -17,9 +17,9 @@ public class CalculateFibonacci {
         if (n == 0) return 0;
         if (n == 1) return 1;
 
-        int f1 = 1;
+        int f1 = 0;
         int f2 = 1;
-        for (int i = 2; i < n; i++){
+        for (int i = 1; i < n; i++){
             lastFibo.fibo = f1 + f2;
             f1 = f2;
             f2 = lastFibo.fibo;
@@ -47,10 +47,7 @@ public class CalculateFibonacci {
     }
 
     public static void main(String[] args) {
-        System.out.println(CalculateFibonacci.fiboNumber(10));
-        System.out.println(CalculateFibonacci.getLastFibo().fibo);
-        System.out.println(CalculateFibonacci.fiboNumber(10));
-
+        System.out.println(CalculateFibonacci.fiboNumber(29));
     }
 }
 
